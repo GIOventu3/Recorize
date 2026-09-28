@@ -1,0 +1,8 @@
+Build me a system repair tool written in rust, have to work with arch repos 
+When the system breaks
+It should save all files that were safed to an specific dir in an safe directory so the user can get them back
+So then they are safed to the recovery dir
+And when the system wont boot it goes to recovery mode and gives options like save files to an external
+device reinstall with saved files, repair system, recover files. The recovery dir will also be immutable so a
+broken system cant override it
+This will of course be made in rust

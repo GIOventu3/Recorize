@@ -1,0 +1,8 @@
+[Unit]
+Description=ReCorize Recovery Mode
+DefaultDependencies=no
+Requires=local-fs.target
+After=local-fs.target
+AllowIsolate=yes
+Wants=recorize-recovery.service
+Conflicts=rescue.service

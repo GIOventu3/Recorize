@@ -1,0 +1,7 @@
+[Unit]
+Description=ReCorize recovery snapshot
+ConditionPathIsDirectory=/var/lib/recorize/recovery
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/recorize save --quiet

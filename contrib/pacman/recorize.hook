@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Saving a ReCorize recovery generation before the package transaction
+When = PreTransaction
+Exec = /usr/bin/recorize save --scope transaction --quiet
+AbortOnFail

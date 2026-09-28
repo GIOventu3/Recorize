@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily ReCorize recovery snapshot
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=20min
+
+[Install]
+WantedBy=timers.target
